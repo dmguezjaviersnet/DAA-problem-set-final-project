@@ -1,0 +1,48 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{algpseudocode,algorithm,algorithmicx}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\begin{document}
+    \title{\textcolor{blue}{\huge\textbf{Problem - 173D - Codeforces - Deputies}}\\}
+	\author{\large{Javier E. Domínguez Hernández C-412}}  
+    \date{7 de julio de 2022}
+    \maketitle
+
+	\section{Descripción}
+
+	\subsection{English}
+
+	An integer array a of length $n$ is said to be a PalindORme if ($a_1 | a_2 | … | a_i$) = ($a_{n−i+1} | … | a_{n−1} | a_n$) for all $1 \le i \le n$, where $|$ denotes the bitwise OR operation.\\
+
+		An integer array a of length $n$ is considered to be good if its elements can be rearranged to form a PalindORme. Formally, array a is good if there exists a permutation $p_1, p_2,…, p_n$ (an array where each integer from $1$ to $n$ appears exactly once) for which $a_{p1}, a_{p2},…a_{pn}$ is a PalindORme.\\
+
+		Find the number of good arrays of length $n$, consisting only of integers in the range $[0, 2^{k} - 1]$, and print it modulo some prime $m$.\\
+
+		Two arrays $a_1, a_2, …, a_n$ and $b_1, b_2, …, b_n$ are considered to be different if there exists any $i$ ($1 \le i \le n$) such that $a_i \neq b_i$.\\
+
+		{\bf Input}\\
+		The first and only line of the input contains three integers $n$, $k$ and $m$ ($1 \le n,k \le 80, 108 <m < 109$). It is guaranteed that $m$ is prime.\\
+
+		{\bf Output}\\
+		Print a single integer  — the number of good arrays modulo $m$.\\
+		\newpage
+
+	\subsection{Español}
+	Se dice que un array entero a de longitud $n$ es un PalindORme si ($a_1 | a_2 | … | a_i$) = ($a_{n−i+1} | … | a_{n−1} | a_n$) para todo $1 \le i \le n$, donde $|$ denota la operación OR bit a bit.\\
+
+	Un array de enteros $a$ de longitud $n$ se considera buena si sus elementos se pueden reorganizar para formar un PalindORme. Formalmente, el array $a$ es bueno si existe una permutación $p_1, p2, …, p_n$ (un array donde cada entero del $1$ al $n$ aparece exactamente una vez) para el cual $a_{p1},a_{p2},…, a_{pn}$ es un PalindORme.\\
+
+		Encuentre el número de arrays buenos de longitud $n$, que consisten solo en números enteros en el rango $[0, 2^k − 1]$, e imprímalo módulo algún primo $m$.\\
+
+		Dos arrays $a_1, a_2, …, a_n$ y $b_1, b_2, …, b_n$ se consideran diferentes si existe algún $i$ ($1 \le i \le n$) tal que $a_i \neq b_i$.\\
+
+		{\bf Entrada}\\
+		La primera y única línea de la entrada contiene tres números enteros n, k y m (1≤n,k≤80, 108<m<109). Se garantiza que m es primo.\\
+
+		{\bf Salida}\\
+		Imprima un solo entero: el número de arrays buenos módulo $m$.\\
+		\newpage
+
+\end{document}

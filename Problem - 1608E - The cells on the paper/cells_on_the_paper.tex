@@ -1,0 +1,60 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{algpseudocode,algorithm,algorithmicx}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\begin{document}
+    \title{\textcolor{blue}{\huge\textbf{Problem - 173D - Codeforces - Deputies}}\\}
+	\author{\large{Javier E. Domínguez Hernández C-412}}  
+    \date{7 de julio de 2022}
+    \maketitle
+
+	\section{Descripción}
+
+	\subsection{English}
+		On an endless checkered sheet of paper, $n$ cells are chosen and colored in three colors, where $n$ is divisible by $3$. It turns out that there are exactly $\frac{n}{3}$ marked cells of each of three colors!.\\
+
+		Find the largest $k$ such that it's possible to choose $\frac{k}{3}$ cells of each color, remove all other marked cells, and then select three rectangles with sides parallel to the grid lines so that the following conditions hold:\\
+
+		\begin{enumerate}
+			\item No two rectangles can intersect (but they can share a part of the boundary). In other words, the area of intersection of any two of these rectangles must be $0$.\\
+
+			\item The $i-th$ rectangle contains all the chosen cells of the $i-th$ color and no chosen cells of other colors, for $i=1, 2, 3$.\\
+		\end{enumerate}		
+
+		{\bf Input}\\
+
+		The first line of the input contains a single integer $n$ — the number of the marked cells ($3 \le n \le 105$, $n$ is divisible by $3$).\\
+
+		The $i-th$ of the following $n$ lines contains three integers $xi$, $yi$, $ci$ ($|xi|, |yi| \le 109; 1 \le c_i \le 3$), where ($xi$, $yi$) are the coordinates of the $i-th$ marked cell and $c_i$ is its color.\\
+
+		It's guaranteed that all cells ($xi$, $yi$) in the input are distinct, and that there are exactly $\frac{n}{3}$ cells of each color.\\
+
+		{\bf Output}\\
+
+		Output a single integer $k$ — the largest number of cells you can leave.\\
+		\newpage
+
+	\subsection{Español}
+	En una hoja de papel a cuadros sin fin, se eligen $n$ celdas y se colorean en tres colores, donde $n$ es divisible por $3$. ¡Resulta que hay exactamente $\frac{n}{3}$ celdas marcadas de cada uno de los tres colores!.\\
+
+	Encuentre el mayor $k$ tal que sea posible elegir $\frac{k}{3}$ celdas de cada color, eliminar todas las demás celdas marcadas y luego seleccionar tres rectángulos con lados paralelos a las líneas de la cuadrícula y que se cumplan las siguientes condiciones:\\
+
+	\begin{enumerate}
+		\item Dos rectángulos no pueden cruzarse (pero pueden compartir una parte del límite). En otras palabras, el área de intersección de cualquiera de estos dos rectángulos debe ser $0$.\\
+
+		\item El $i-ésimo$ rectángulo contiene todas las celdas elegidas del $i-ésimo$ color y ninguna celda elegida de otros colores, para $i=1,2,3$.\\
+	\end{enumerate}
+	
+		{\bf Entrada}\\
+		La primera línea de la entrada contiene un único número entero $n$: el número de celdas marcadas ($3 \le n \le 105$, $n$ es divisible por $3$).\\
+
+		La $i-ésima$ de las siguientes $n$ líneas contiene tres enteros $x_i$, $y_i$, $c_i$ ($|x_i|, |y_i| \le 109; 1 \le c_i \le 3$), donde ($x_i$, $y_i$) son las coordenadas de la $i-ésima$ marcada celda y $c_i$ es su color.\\
+
+		Se garantiza que todas las celdas ($xi$, $yi$) en la entrada sean distintas y que haya exactamente $\frac{n}{3}$ celdas de cada color.\\
+
+		{\bf Salida}\\
+		Muestra un solo entero $k$: el mayor número de celdas que puedes dejar.\\
+
+\end{document}
